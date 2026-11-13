@@ -1,4 +1,4 @@
-name: Deploy EdX to GitHub Pages
+name: Deploy Raihan to GitHub Pages
 
 on:
   push:

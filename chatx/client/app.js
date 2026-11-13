@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------ *
- * EdX Chat — app page (WeChat / Telegram style)
- * Auth-gated (see login.js). Left sidebar: EdX Agent (default AI
+ * Raihan Chat — app page (WeChat / Telegram style)
+ * Auth-gated (see login.js). Left sidebar: Raihan Agent (default AI
  * contact) + friends + chats. Menu drawer: feed / friends / invite /
  * wallet / profile. Realtime via the Node + WebSocket server when present,
  * else BroadcastChannel (same-browser demo). Simulated wallet. Local-only.
@@ -49,7 +49,7 @@
     localStorage.setItem(KEYS.tx, JSON.stringify(txs));
   }
   function seed() {
-    // No fake demo users. New accounts start clean with only the EdX Agent.
+    // No fake demo users. New accounts start clean with only the Raihan Agent.
     if (!users[me]) users[me] = { wallet: 5000, friends: [], unread: {}, archived: [] };
     save();
   }
@@ -155,7 +155,7 @@
         convEls[c.name] = li;
       }
       li.classList.toggle("is-active", activeChat === c.name);
-      const label = c.ai ? "EdX" : c.name;
+      const label = c.ai ? "Raihan" : c.name;
       const inner = document.createElement("div");
       inner.className = "conv__inner";
       inner.innerHTML = `<span class="avatar ${c.ai ? "avatar--ai" : ""}">${icon}${dot}</span>
@@ -206,7 +206,7 @@
       <div class="thread__welcome" id="welcome">
         <div class="welcome__logo">M</div>
         <h2>Welcome to Chat</h2>
-        <p>Pick a conversation on the left — or start with <b>EdX</b>, your built-in AI assistant.</p>
+        <p>Pick a conversation on the left — or start with <b>Raihan</b>, your built-in AI assistant.</p>
       </div>`;
   }
 
@@ -221,7 +221,7 @@
       <header class="thread__head">
         <button class="iconbtn thread__back" id="backBtn" title="Back">‹</button>
         <span class="avatar ${ai ? "avatar--ai" : ""}">${ai ? "🤖" : av(name)}${ai ? "" : (isOnline(name) ? '<span class="dot on"></span>' : "")}</span>
-        <div class="thread__who"><b>${ai ? "EdX" : esc(name)}</b><span>${ai ? "AI assistant · powered by EdX" : (isOnline(name) ? "online" : "offline")}</span></div>
+        <div class="thread__who"><b>${ai ? "Raihan" : esc(name)}</b><span>${ai ? "AI assistant · powered by Raihan" : (isOnline(name) ? "online" : "offline")}</span></div>
         <button class="iconbtn thread__call" data-call="voice" title="Voice call">📞</button><button class="iconbtn thread__call" data-call="video" title="Video call">📹</button>
       </header>
       <div class="msgs" id="msgBox"></div>
@@ -234,7 +234,7 @@
           <button type="button" class="tool" id="voiceBtn" data-act="voice" title="Voice message">🎤</button>
         </div>
         <div class="composer__row">
-          <input id="msgInput" placeholder="${ai ? "Ask EdX…" : "Message " + esc(name) + "…"}" autocomplete="off" />
+          <input id="msgInput" placeholder="${ai ? "Ask Raihan…" : "Message " + esc(name) + "…"}" autocomplete="off" />
           <button type="submit" class="sendbtn">Send</button>
         </div>
       </form>
@@ -398,7 +398,7 @@
     $("callMute").addEventListener("click", () => { const b = $("callMute"); b.classList.toggle("is-muted"); b.textContent = b.classList.contains("is-muted") ? "🔇" : "🎙️"; });
   }
 
-  /* ===================== EdX AGENT ===================== */
+  /* ===================== Raihan AGENT ===================== */
   async function agentRespond(userText) {
     const typing = document.createElement("div");
     typing.className = "msg them"; typing.textContent = "…";
@@ -421,7 +421,7 @@
           headers: { "Content-Type": "application/json", Authorization: "Bearer " + key },
           body: JSON.stringify({
             model: model || "gpt-4o-mini",
-            messages: [{ role: "system", content: "You are EdX Agent, a friendly, concise AI assistant inside EdX Chat. Keep replies short and helpful." }, { role: "user", content: text }],
+            messages: [{ role: "system", content: "You are Raihan Agent, a friendly, concise AI assistant inside Raihan Chat. Keep replies short and helpful." }, { role: "user", content: text }],
             temperature: 0.5,
           }),
         });
@@ -432,17 +432,17 @@
   }
   function localAgent(t) {
     const s = t.toLowerCase();
-    if (/(hi|hello|hey|yo|sup)\b/.test(s)) return "Hey " + me + "! I'm EdX 👋 Ask me anything, or use the toolbar below to send stickers, photos, voice & more.";
-    if (/who are you|your name|what are you/.test(s)) return "I'm EdX — your built-in assistant in EdX Chat. I can chat, help you find features, or just keep you company.";
+    if (/(hi|hello|hey|yo|sup)\b/.test(s)) return "Hey " + me + "! I'm Raihan 👋 Ask me anything, or use the toolbar below to send stickers, photos, voice & more.";
+    if (/who are you|your name|what are you/.test(s)) return "I'm Raihan — your built-in assistant in Raihan Chat. I can chat, help you find features, or just keep you company.";
     if (/help|how (do|to)|feature/.test(s)) return "Try: open a friend from the sidebar to chat, tap ☰ for Feed / Friends / Invite / Wallet, or use ✚ to add friends. The composer has emoji, stickers, photo, video and voice. Want me to explain any?";
-    if (/weather/.test(s)) return "EdX Weather gives live, iPhone-style forecasts. Open it from the main portal.";
-    if (/code|python|javascript|bug/.test(s)) return "For coding help, EdX Code has a built-in agent. Here I'm happy to chat or brainstorm!";
-    if (/zodiac|horoscope|sign/.test(s)) return "Curious about signs? EdX Zodiac profiles your Western + Chinese signs and MBTI, plus a Cosmic Match. 🔮";
+    if (/weather/.test(s)) return "Raihan Weather gives live, iPhone-style forecasts. Open it from the main portal.";
+    if (/code|python|javascript|bug/.test(s)) return "For coding help, Raihan Code has a built-in agent. Here I'm happy to chat or brainstorm!";
+    if (/zodiac|horoscope|sign/.test(s)) return "Curious about signs? Raihan Zodiac profiles your Western + Chinese signs and MBTI, plus a Cosmic Match. 🔮";
     if (/friend|invite/.test(s)) return "Tap ✚ (or ☰ → Friends / Invite) to add or invite friends. They'll show up right here on the left.";
     if (/sticker|emoji|photo|voice|video|call/.test(s)) return "Use the toolbar under the message box: 😊 emoji, ⭐ stickers, 🖼️ photo, 🎬 video, 🎤 voice, and 📞/📹 to call.";
     if (/bye|goodbye/.test(s)) return "Catch you later, " + me + "! I'm always one tap away. 👋";
-    if (/\?$/.test(s)) return "Good question! In short: EdX Chat keeps your conversations, feed and wallet together — and I'm here whenever you need a hand.";
-    return "Got it. I'm EdX — tell me more and I'll do my best to help! 😊";
+    if (/\?$/.test(s)) return "Good question! In short: Raihan Chat keeps your conversations, feed and wallet together — and I'm here whenever you need a hand.";
+    return "Got it. I'm Raihan — tell me more and I'll do my best to help! 😊";
   }
 
   /* ===================== DRAWER (feed/wallet/friends/invite/profile) ===================== */
@@ -574,7 +574,7 @@
       <div class="profile">
         <span class="avatar avatar--lg">${av(me)}</span>
         <h3>${esc(me)}</h3>
-        <p class="status">${isOnline(me) ? "online" : "offline"} · EdX Chat</p>
+        <p class="status">${isOnline(me) ? "online" : "offline"} · Raihan Chat</p>
         <div class="profile__btns">
           <button class="btn" id="logoutBtn">Log out</button>
           <button class="btn btn--danger" id="delBtn">Delete account</button>
@@ -585,7 +585,7 @@
       localStorage.removeItem(KEYS.session); location.replace("index.html");
     });
     body.querySelector("#delBtn").addEventListener("click", () => {
-      if (!confirm("Permanently delete your EdX account? This cannot be undone.")) return;
+      if (!confirm("Permanently delete your Raihan account? This cannot be undone.")) return;
       const accounts = JSON.parse(localStorage.getItem("mrichat-accounts") || "{}");
       delete accounts[me];
       localStorage.setItem("mrichat-accounts", JSON.stringify(accounts));

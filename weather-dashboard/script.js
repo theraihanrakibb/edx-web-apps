@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------ *
- * EdX Weather — multi-location weather (iPhone-style)
+ * Raihan Weather — multi-location weather (iPhone-style)
  * Live OpenWeatherMap when the key works; otherwise a built-in mock
  * dataset so the app always feels alive. Locations persist locally.
  * ------------------------------------------------------------------ */
@@ -108,7 +108,7 @@ function renderDetail(loc) {
   $("sunrise").textContent = fmtTime(d.sys.sunrise, d.tz);
   $("sunset").textContent = fmtTime(d.sys.sunset, d.tz);
   applyScene(d.weather[0].main);
-  document.title = `${d.name} · ${Math.round(d.main.temp)}° · EdX`;
+  document.title = `${d.name} · ${Math.round(d.main.temp)}° · Raihan`;
 }
 
 function renderList() {

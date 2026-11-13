@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:06b6d4&height=200&section=header&text=EdX&fontSize=64&fontAlignY=36&fontColor=ffffff" alt="EdX" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:06b6d4&height=200&section=header&text=Raihan&fontSize=64&fontAlignY=36&fontColor=ffffff" alt="Raihan" />
 </p>
 
-<h1 align="center">EdX</h1>
+<h1 align="center">Raihan</h1>
 
 <p align="center">
   <b>Three worlds. One name. Eternal.</b>
@@ -24,23 +24,23 @@
 
 ## What's inside
 
-EdX collects four independently-shippable web products under a single identity. Every web
+Raihan collects four independently-shippable web products under a single identity. Every web
 app is **self-contained vanilla HTML/CSS/JS — no build step, no framework, no install**. Open the
 file and it works.
 
 | App | Folder | What it does | Stack |
 |-----|--------|--------------|-------|
-| **EdX Weather** | [`weather-dashboard/`](weather-dashboard) | iPhone-style multi-location weather with live geolocation, weather-reactive scenes, notes & light/dark theme. | Vanilla JS · OpenWeatherMap · Geolocation |
-| **EdX Code** | [`online-code-editor/`](online-code-editor) | In-browser IDE that **runs JS & Python** (Pyodide) and routes other languages to the **EdX Agent** (LLM). | Vanilla JS · Pyodide · LLM API |
-| **EdX Zodiac** | [`zodiac-calculator/`](zodiac-calculator) | Cosmic profile: Western + Chinese zodiac + MBTI with a generated summary & compatibility check. | Vanilla JS |
-| **EdX Chat** | [`chatx/client/`](chatx/client) | Realtime social — chat, feed, friends & a wallet. Client-side by default, with **optional Node + WebSocket server** for true cross-device realtime. | Vanilla JS · WebSocket · localStorage |
+| **Raihan Weather** | [`weather-dashboard/`](weather-dashboard) | iPhone-style multi-location weather with live geolocation, weather-reactive scenes, notes & light/dark theme. | Vanilla JS · OpenWeatherMap · Geolocation |
+| **Raihan Code** | [`online-code-editor/`](online-code-editor) | In-browser IDE that **runs JS & Python** (Pyodide) and routes other languages to the **Raihan Agent** (LLM). | Vanilla JS · Pyodide · LLM API |
+| **Raihan Zodiac** | [`zodiac-calculator/`](zodiac-calculator) | Cosmic profile: Western + Chinese zodiac + MBTI with a generated summary & compatibility check. | Vanilla JS |
+| **Raihan Chat** | [`chatx/client/`](chatx/client) | Realtime social — chat, feed, friends & a wallet. Client-side by default, with **optional Node + WebSocket server** for true cross-device realtime. | Vanilla JS · WebSocket · localStorage |
 
 ---
 
 ## Highlights
 
-- **One brand, four products.** Consistent naming (`EdX *`), shared light/dark theming, and a
-  common identity across every app — each footer reads *"Powered by EdX"*.
+- **One brand, four products.** Consistent naming (`Raihan *`), shared light/dark theming, and a
+  common identity across every app — each footer reads *"Powered by Raihan"*.
 - **Runs anywhere.** No bundlers, no `npm install`, no servers for the web apps. Open
   `index.html` (or serve with `python -m http.server`) and you're in.
 - **Real features, not demos.** Live weather & geolocation, an in-browser code runner with an
@@ -53,7 +53,7 @@ file and it works.
 
 ```bash
 # Clone the suite
-git clone https://github.com/theraihanrakibb/ml-deep-learning.git
+git clone https://github.com/theraihanrakibb/edx-web-apps.git
 cd ml-deep-learning/web-apps
 
 # Run any web app — e.g. the weather dashboard
@@ -62,22 +62,22 @@ python -m http.server 8000
 # open http://localhost:8000
 ```
 
-> Tip: open **EdX Chat** in two browser tabs with different usernames to see realtime
-> sync, and try **EdX Code**'s ▶ Run (JS/Python) or the 🤖 EdX Agent.
+> Tip: open **Raihan Chat** in two browser tabs with different usernames to see realtime
+> sync, and try **Raihan Code**'s ▶ Run (JS/Python) or the 🤖 Raihan Agent.
 
 ---
 
 ## Per-product setup
 
-- **EdX Weather** — ships with a free OpenWeatherMap key; works offline via a built-in mock dataset.
-- **EdX Code** — JS runs in a sandbox; Python via Pyodide CDN. The EdX Agent works with
+- **Raihan Weather** — ships with a free OpenWeatherMap key; works offline via a built-in mock dataset.
+- **Raihan Code** — JS runs in a sandbox; Python via Pyodide CDN. The Raihan Agent works with
   **any OpenAI-compatible provider** (OpenAI, Anthropic, Google, Mistral, NVIDIA, DeepSeek, Alibaba,
   Z.ai, BAAI and more). Pick a provider, add your key, validate to load models, then choose by token cost.
-- **EdX Chat** — client-side first: it just works from `chatx/client/`. For real cross-device
+- **Raihan Chat** — client-side first: it just works from `chatx/client/`. For real cross-device
   realtime, run the included zero-dependency server: `cd chatx/server && npm start` (or `node server.js`),
   then open the page — the client auto-connects.
 See each folder's `README.md` for details.
 
 ---
 
-<p align="center"><sub>EdX — Three worlds. One name. Eternal. — Powered by EdX</sub></p>
+<p align="center"><sub>Raihan — Three worlds. One name. Eternal. — Powered by Raihan</sub></p>
