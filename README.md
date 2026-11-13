@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:06b6d4&height=200&section=header&text=EdX&fontSize=64&fontAlignY=36&fontColor=ffffff" alt="EdX" />
-</p>
-
 <h1 align="center">EdX</h1>
 
 <p align="center">
