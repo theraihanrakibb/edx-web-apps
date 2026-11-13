@@ -54,7 +54,7 @@ file and it works.
 ```bash
 # Clone the suite
 git clone https://github.com/theraihanrakibb/edx-web-apps.git
-cd ml-deep-learning/web-apps
+cd edx-web-apps
 
 # Run any web app — e.g. the weather dashboard
 cd weather-dashboard
