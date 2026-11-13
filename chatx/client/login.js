@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------ *
- * MRIRYHED Chat — login / signup (username + password, local accounts)
+ * EdX Chat — login / signup (username + password, local accounts)
  * Redirects to app.html on success. No server needed; accounts live in
  * localStorage (demo-grade — not real cryptography).
  * ------------------------------------------------------------------ */

@@ -1,8 +1,8 @@
-# MRIRYHED Weather · Live Weather Dashboard
+# EdX Weather · Live Weather Dashboard
 
 A modern, single-page weather app that pulls **live conditions for any city** from the
 [OpenWeatherMap](https://openweathermap.org/) API and frames them in a glassy, weather-reactive
-interface. Built by **MRIRYHED** as part of the Raihan portfolio. The whole page subtly shifts its
+interface. Built by **EdX** as part of the EdX portfolio. The whole page subtly shifts its
 background to match the sky — sunny gold for *clear*, deep blue for *rain*, violet for *thunder*,
 and so on.
 
@@ -61,5 +61,5 @@ rather than crashing.
 
 ---
 
-Part of the **MRIRYHED** suite: **MRIRYHED Weather** (this app), **MRIRYHED Code**, **MRIRYHED Zodiac**,
-**MRIRYHED Chat** (realtime social), and **MRIRYHED Mind** (ML).
+Part of the **EdX** suite: **EdX Weather** (this app), **EdX Code**, **EdX Zodiac**,
+**EdX Chat** (realtime social), and **EdX Mind** (ML).

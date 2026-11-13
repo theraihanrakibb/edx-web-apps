@@ -1,4 +1,4 @@
-/* Optional realtime relay for the GitHub Pages build of MRIRYHED Chat.
+/* Optional realtime relay for the GitHub Pages build of EdX Chat.
  *
  * The chat works out-of-the-box in two ways:
  *   1. Served by the Node server (chatx/server)  -> same-origin WebSocket, realtime.

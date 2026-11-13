@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------ *
- * MRIRYHED Chat — real-time server (Node + WebSocket, ZERO dependencies)
+ * EdX Chat — real-time server (Node + WebSocket, ZERO dependencies)
  *   • Serves the chat client from ../client
  *   • Relays live messages / presence / feed / wallet across devices
  * Run:  node server.js   (env PORT to override, default 3000)
@@ -127,5 +127,5 @@ function sendFrame(socket, data, opcode = 0x1) {
 }
 
 server.listen(PORT, () => {
-  console.log("MRIRYHED Chat server live → http://localhost:" + PORT);
+  console.log("EdX Chat server live → http://localhost:" + PORT);
 });

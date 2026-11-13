@@ -1,10 +1,10 @@
-# MRIRYHED Zodiac · Cosmic Profile & Compatibility
+# EdX Zodiac · Cosmic Profile & Compatibility
 
 A single-page **cosmic profile** app that turns a birth date into a rich, readable
 personality reading — and lets you check compatibility with a partner. Built by
-**MRIRYHED** as part of the Raihan portfolio.
+**EdX** as part of the EdX portfolio.
 
-Instead of a single "match %", MRIRYHED Zodiac reveals **three interlocking profiles**:
+Instead of a single "match %", EdX Zodiac reveals **three interlocking profiles**:
 
 - **Western zodiac** (Aries … Pisces) — element, ruling planet, core traits, and a
   short archetype description.
@@ -55,5 +55,5 @@ score updates live as you change any input, gender toggle, or MBTI chip.
 
 ---
 
-Part of the **MRIRYHED** suite: **MRIRYHED Weather**, **MRIRYHED Code**,
-**MRIRYHED Zodiac** (this app), **MRIRYHED Chat** (realtime social), and **MRIRYHED Mind** (ML).
+Part of the **EdX** suite: **EdX Weather**, **EdX Code**,
+**EdX Zodiac** (this app), **EdX Chat** (realtime social), and **EdX Mind** (ML).

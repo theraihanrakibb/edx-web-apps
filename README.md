@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:06b6d4&height=200&section=header&text=MRIRYHED&fontSize=64&fontAlignY=36&fontColor=ffffff" alt="MRIRYHED" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:06b6d4&height=200&section=header&text=EdX&fontSize=64&fontAlignY=36&fontColor=ffffff" alt="EdX" />
 </p>
 
-<h1 align="center">MRIRYHED</h1>
+<h1 align="center">EdX</h1>
 
 <p align="center">
   <b>Three worlds. One name. Eternal.</b>
@@ -24,26 +24,23 @@
 
 ## What's inside
 
-MRIRYHED collects four independently-shippable web products under a single identity. Every web
+EdX collects four independently-shippable web products under a single identity. Every web
 app is **self-contained vanilla HTML/CSS/JS — no build step, no framework, no install**. Open the
-file and it works. My separate machine-learning work is a **personal portfolio** in its own repo,
-[**Raihan's ML Projects (ML-DL-AI)**](https://github.com/theraihanrakibb/ML-DL-AI) — it is **not**
-part of the MRIRYHED suite.
+file and it works.
 
 | App | Folder | What it does | Stack |
 |-----|--------|--------------|-------|
-| **MRIRYHED Weather** | [`weather-dashboard/`](weather-dashboard) | iPhone-style multi-location weather with live geolocation, weather-reactive scenes, notes & light/dark theme. | Vanilla JS · OpenWeatherMap · Geolocation |
-| **MRIRYHED Code** | [`online-code-editor/`](online-code-editor) | In-browser IDE that **runs JS & Python** (Pyodide) and routes other languages to the **MRIRYHED Agent** (LLM). | Vanilla JS · Pyodide · LLM API |
-| **MRIRYHED Zodiac** | [`zodiac-calculator/`](zodiac-calculator) | Cosmic profile: Western + Chinese zodiac + MBTI with a generated summary & compatibility check. | Vanilla JS |
-| **MRIRYHED Chat** | [`chatx/client/`](chatx/client) | Realtime social — chat, feed, friends & a wallet. Client-side by default, with **optional Node + WebSocket server** for true cross-device realtime. | Vanilla JS · WebSocket · localStorage |
-| **Raihan's ML Projects** | [theraihanrakibb/ML-DL-AI](https://github.com/theraihanrakibb/ML-DL-AI) | Personal ML/DL/AI portfolio: classification, regression, clustering & a recommender. | Python · Jupyter · scikit-learn |
+| **EdX Weather** | [`weather-dashboard/`](weather-dashboard) | iPhone-style multi-location weather with live geolocation, weather-reactive scenes, notes & light/dark theme. | Vanilla JS · OpenWeatherMap · Geolocation |
+| **EdX Code** | [`online-code-editor/`](online-code-editor) | In-browser IDE that **runs JS & Python** (Pyodide) and routes other languages to the **EdX Agent** (LLM). | Vanilla JS · Pyodide · LLM API |
+| **EdX Zodiac** | [`zodiac-calculator/`](zodiac-calculator) | Cosmic profile: Western + Chinese zodiac + MBTI with a generated summary & compatibility check. | Vanilla JS |
+| **EdX Chat** | [`chatx/client/`](chatx/client) | Realtime social — chat, feed, friends & a wallet. Client-side by default, with **optional Node + WebSocket server** for true cross-device realtime. | Vanilla JS · WebSocket · localStorage |
 
 ---
 
 ## Highlights
 
-- **One brand, four products.** Consistent naming (`MRIRYHED *`), shared light/dark theming, and a
-  common identity across every app — each footer reads *"Powered by MRIRYHED"*.
+- **One brand, four products.** Consistent naming (`EdX *`), shared light/dark theming, and a
+  common identity across every app — each footer reads *"Powered by EdX"*.
 - **Runs anywhere.** No bundlers, no `npm install`, no servers for the web apps. Open
   `index.html` (or serve with `python -m http.server`) and you're in.
 - **Real features, not demos.** Live weather & geolocation, an in-browser code runner with an
@@ -56,8 +53,8 @@ part of the MRIRYHED suite.
 
 ```bash
 # Clone the suite
-git clone https://github.com/theraihanrakibb/MRIRYHED.git
-cd MRIRYHED
+git clone https://github.com/theraihanrakibb/ml-deep-learning.git
+cd ml-deep-learning/web-apps
 
 # Run any web app — e.g. the weather dashboard
 cd weather-dashboard
@@ -65,25 +62,22 @@ python -m http.server 8000
 # open http://localhost:8000
 ```
 
-> Tip: open **MRIRYHED Chat** in two browser tabs with different usernames to see realtime
-> sync, and try **MRIRYHED Code**'s ▶ Run (JS/Python) or the 🤖 MRIRYHED Agent.
+> Tip: open **EdX Chat** in two browser tabs with different usernames to see realtime
+> sync, and try **EdX Code**'s ▶ Run (JS/Python) or the 🤖 EdX Agent.
 
 ---
 
 ## Per-product setup
 
-- **MRIRYHED Weather** — ships with a free OpenWeatherMap key; works offline via a built-in mock dataset.
-- **MRIRYHED Code** — JS runs in a sandbox; Python via Pyodide CDN. The MRIRYHED Agent works with
+- **EdX Weather** — ships with a free OpenWeatherMap key; works offline via a built-in mock dataset.
+- **EdX Code** — JS runs in a sandbox; Python via Pyodide CDN. The EdX Agent works with
   **any OpenAI-compatible provider** (OpenAI, Anthropic, Google, Mistral, NVIDIA, DeepSeek, Alibaba,
   Z.ai, BAAI and more). Pick a provider, add your key, validate to load models, then choose by token cost.
-- **MRIRYHED Chat** — client-side first: it just works from `chatx/client/`. For real cross-device
+- **EdX Chat** — client-side first: it just works from `chatx/client/`. For real cross-device
   realtime, run the included zero-dependency server: `cd chatx/server && npm start` (or `node server.js`),
   then open the page — the client auto-connects.
-- **ML / DL / AI** — lives at [theraihanrakibb/ML-DL-AI](https://github.com/theraihanrakibb/ML-DL-AI):
-  `pip install -r requirements.txt && jupyter notebook`.
-
 See each folder's `README.md` for details.
 
 ---
 
-<p align="center"><sub>MRIRYHED — Three worlds. One name. Eternal. — Powered by MRIRYHED</sub></p>
+<p align="center"><sub>EdX — Three worlds. One name. Eternal. — Powered by EdX</sub></p>

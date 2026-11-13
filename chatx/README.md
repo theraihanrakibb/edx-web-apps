@@ -1,4 +1,4 @@
-# MRIRYHED Chat — realtime server
+# EdX Chat — realtime server
 
 The chat works **out of the box**: open `chatx/client/index.html` (or the GitHub Pages link)
 and it runs as a local demo — two tabs in the same browser sync live via `BroadcastChannel`.
@@ -21,12 +21,12 @@ GitHub Pages can't serve WebSockets, so deploy this tiny server to a free Node h
 options below read `render.yaml` / `railway.json` from the repo root.
 
 **Render (recommended — free, WebSocket-friendly):**
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/theraihanrakibb/MRIRYHED)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/theraihanrakibb/ml-deep-learning)
 
-> Replace the repo owner in the button URL if needed: `https://render.com/deploy?repo=https://github.com/<you>/MRIRYHED`
+> Replace the repo owner in the button URL if needed: `https://render.com/deploy?repo=https://github.com/<you>/EdX`
 
 **Railway:**
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?repo=https://github.com/theraihanrakibb/MRIRYHED)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?repo=https://github.com/theraihanrakibb/ml-deep-learning)
 
 After deploy you get a URL like `https://mrihat.onrender.com`. Open it and the chat is live
 for everyone. (Render's free tier spins down when idle — the first connect after a pause takes
