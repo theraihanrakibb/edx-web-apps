@@ -1,8 +1,8 @@
-# Raihan Code · Online Code Editor + Raihan Agent
+# Code · Online Code Editor + EdX Agent
 
-A sleek, in-browser **IDE** with an AI coding copilot — part of the **Raihan** suite.
+A sleek, in-browser **IDE** with an AI coding copilot — part of the **EdX** suite.
 Tabbed HTML/CSS/JS playground with live preview, a synced line-number gutter, and a
-**Raihan Agent** (LLM) that can explain, debug, and run code. Built with vanilla JS — no build step.
+**EdX Agent** (LLM) that can explain, debug, and run code. Built with vanilla JS — no build step.
 
 ## Features
 
@@ -13,14 +13,14 @@ Tabbed HTML/CSS/JS playground with live preview, a synced line-number gutter, an
   - **JavaScript** → executes in a sandbox; `console.*` is captured to the **Console** tab.
   - **Python** → runs in-browser via **Pyodide** (WebAssembly) — no install.
   - **Other languages** (Java, C++, C#, Go, Rust, Ruby, PHP, TypeScript, SQL, Bash…) →
-    one click routes the code to the **Raihan Agent**, which runs/reasons about it and returns output.
-- **Raihan Agent** — an LLM assistant panel (🤖). Ask it to *explain*, *debug*, or *run* your code;
+    one click routes the code to the **EdX Agent**, which runs/reasons about it and returns output.
+- **EdX Agent** — an LLM assistant panel (🤖). Ask it to *explain*, *debug*, or *run* your code;
   it sees what's in the editor. Works with any **OpenAI-compatible** API (key stored locally).
 - **Console capture** — `console.log / warn / error` shown with a live count badge.
 - **Auto-run toggle**, **Copy**, **Save** (download), **persistence** (code + language saved to `localStorage`).
 - **Dark / light theme** — toggle top-right, saved locally.
 
-## Raihan Agent setup
+## EdX Agent setup
 
 Click **🤖 Agent → ⚙** and enter:
 - **API base URL** (default `https://api.openai.com/v1`)
@@ -35,11 +35,11 @@ Without a key the agent still opens and frames your request, but live answers re
 |------|---------|
 | `index.html` | Toolbar, editor + preview panes, agent panel, settings modal |
 | `style.css`  | IDE theme, CSS variables, `[data-theme]` light mode, agent styles |
-| `script.js`  | Language modes, run engine, gutter sync, Raihan Agent (LLM) |
+| `script.js`  | Language modes, run engine, gutter sync, EdX Agent (LLM) |
 
 ## Run
 
-Open `index.html` in a browser and start typing. For Python/Pyodide and the Raihan Agent you
+Open `index.html` in a browser and start typing. For Python/Pyodide and the EdX Agent you
 need an internet connection.
 
 ```bash

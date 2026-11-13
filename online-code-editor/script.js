@@ -1,12 +1,12 @@
 /* ------------------------------------------------------------------ *
- * Raihan Code — online code editor + Raihan Agent (LLM)
+ * Code — online code editor + EdX Agent (LLM)
  * Web (HTML/CSS/JS) → live preview. JS → sandbox. Python → Pyodide.
- * Other languages → routed to the Raihan Agent. Vanilla JS, no build.
+ * Other languages → routed to the EdX Agent. Vanilla JS, no build.
  * ------------------------------------------------------------------ */
 
 const WEB_STARTER = {
   html: `<div class="card">
-  <h1>Hello, Raihan ⚡</h1>
+  <h1>Hello, EdX ⚡</h1>
   <p>Edit the code — it runs live.</p>
   <button id="go">Tap me</button>
 </div>`,
@@ -18,28 +18,28 @@ button{background:#ff7a59;color:#1a0f0a;border:0;padding:10px 18px;border-radius
   js: `document.getElementById('go').addEventListener('click', () => {
   console.log('Button clicked at', new Date().toLocaleTimeString());
 });
-console.log('Raihan is ready 🚀');`,
+console.log('EdX is ready 🚀');`,
 };
 
 const LANGS = [
   { id: "web", name: "Web (HTML/CSS/JS)", mode: "web" },
   { id: "js", name: "JavaScript", mode: "code", engine: "js", piston: "javascript",
-    starter: `// JavaScript\nfunction greet(name) {\n  return \`Hello, \${name}!\`;\n}\nconsole.log(greet("Raihan"));\n` },
+    starter: `// JavaScript\nfunction greet(name) {\n  return \`Hello, \${name}!\`;\n}\nconsole.log(greet("EdX"));\n` },
   { id: "py", name: "Python", mode: "code", engine: "py",
-    starter: `# Python\nimport math\n\ndef greet(name):\n    return f"Hello, {name}!"\n\nprint(greet("Raihan"))\nprint("pi =", round(math.pi, 4))\n` },
-  { id: "ts", name: "TypeScript", mode: "code", engine: "agent", piston: "typescript", starter: `// TypeScript (ask Raihan Agent to run)\nconst msg: string = "Hello, Raihan";\nconsole.log(msg);\n` },
-  { id: "java", name: "Java", mode: "code", engine: "agent", piston: "java", starter: `// Java (ask Raihan Agent to run)\npublic class Main {\n  public static void main(String[] a) {\n    System.out.println("Hello, Raihan");\n  }\n}\n` },
-  { id: "cpp", name: "C++", mode: "code", engine: "agent", piston: "cpp", starter: `// C++ (ask Raihan Agent to run)\n#include <iostream>\nint main() {\n  std::cout << "Hello, Raihan\\n";\n  return 0;\n}\n` },
-  { id: "c", name: "C", mode: "code", engine: "agent", piston: "c", starter: `// C (ask Raihan Agent to run)\n#include <stdio.h>\nint main() {\n  printf("Hello, Raihan\\n");\n  return 0;\n}\n` },
-  { id: "cs", name: "C#", mode: "code", engine: "agent", piston: "csharp", starter: `// C# (ask Raihan Agent to run)\nusing System;\nclass Program { static void Main() => Console.WriteLine("Hello, Raihan"); }\n` },
-  { id: "go", name: "Go", mode: "code", engine: "agent", piston: "go", starter: `// Go (ask Raihan Agent to run)\npackage main\nimport "fmt"\nfunc main() { fmt.Println("Hello, Raihan") }\n` },
-  { id: "rs", name: "Rust", mode: "code", engine: "agent", piston: "rust", starter: `// Rust (ask Raihan Agent to run)\nfn main() { println!("Hello, Raihan"); }\n` },
-  { id: "rb", name: "Ruby", mode: "code", engine: "agent", piston: "ruby", starter: `# Ruby (ask Raihan Agent to run)\nputs "Hello, Raihan"\n` },
-  { id: "php", name: "PHP", mode: "code", engine: "agent", piston: "php", starter: `<?php\n// PHP (ask Raihan Agent to run)\necho "Hello, Raihan\\n";\n` },
+    starter: `# Python\nimport math\n\ndef greet(name):\n    return f"Hello, {name}!"\n\nprint(greet("EdX"))\nprint("pi =", round(math.pi, 4))\n` },
+  { id: "ts", name: "TypeScript", mode: "code", engine: "agent", piston: "typescript", starter: `// TypeScript (ask EdX Agent to run)\nconst msg: string = "Hello, EdX";\nconsole.log(msg);\n` },
+  { id: "java", name: "Java", mode: "code", engine: "agent", piston: "java", starter: `// Java (ask EdX Agent to run)\npublic class Main {\n  public static void main(String[] a) {\n    System.out.println("Hello, EdX");\n  }\n}\n` },
+  { id: "cpp", name: "C++", mode: "code", engine: "agent", piston: "cpp", starter: `// C++ (ask EdX Agent to run)\n#include <iostream>\nint main() {\n  std::cout << "Hello, EdX\\n";\n  return 0;\n}\n` },
+  { id: "c", name: "C", mode: "code", engine: "agent", piston: "c", starter: `// C (ask EdX Agent to run)\n#include <stdio.h>\nint main() {\n  printf("Hello, EdX\\n");\n  return 0;\n}\n` },
+  { id: "cs", name: "C#", mode: "code", engine: "agent", piston: "csharp", starter: `// C# (ask EdX Agent to run)\nusing System;\nclass Program { static void Main() => Console.WriteLine("Hello, EdX"); }\n` },
+  { id: "go", name: "Go", mode: "code", engine: "agent", piston: "go", starter: `// Go (ask EdX Agent to run)\npackage main\nimport "fmt"\nfunc main() { fmt.Println("Hello, EdX") }\n` },
+  { id: "rs", name: "Rust", mode: "code", engine: "agent", piston: "rust", starter: `// Rust (ask EdX Agent to run)\nfn main() { println!("Hello, EdX"); }\n` },
+  { id: "rb", name: "Ruby", mode: "code", engine: "agent", piston: "ruby", starter: `# Ruby (ask EdX Agent to run)\nputs "Hello, EdX"\n` },
+  { id: "php", name: "PHP", mode: "code", engine: "agent", piston: "php", starter: `<?php\n// PHP (ask EdX Agent to run)\necho "Hello, EdX\\n";\n` },
   { id: "sql", name: "SQL", mode: "code", engine: "agent", starter: `-- SQL\nSELECT name, age FROM users\nWHERE age > 18\nORDER BY name;\n` },
-  { id: "sh", name: "Bash", mode: "code", engine: "agent", starter: `#!/usr/bin/env bash\necho "Hello, Raihan"\n` },
-  { id: "json", name: "JSON", mode: "code", engine: "none", starter: `{\n  "name": "Raihan",\n  "live": true\n}\n` },
-  { id: "md", name: "Markdown", mode: "code", engine: "none", starter: `# Raihan\n\nWrite **Markdown** here.\n` },
+  { id: "sh", name: "Bash", mode: "code", engine: "agent", starter: `#!/usr/bin/env bash\necho "Hello, EdX"\n` },
+  { id: "json", name: "JSON", mode: "code", engine: "none", starter: `{\n  "name": "EdX",\n  "live": true\n}\n` },
+  { id: "md", name: "Markdown", mode: "code", engine: "none", starter: `# EdX\n\nWrite **Markdown** here.\n` },
 ];
 
 const $ = (id) => document.getElementById(id);
@@ -128,8 +128,8 @@ async function runCode(id) {
   if (lang.engine === "js") { runInIframe(code); return; }
   if (lang.engine === "py") { await runPython(code); return; }
   if (lang.engine === "none") { noteLine(`▶ ${lang.name} is a data/markup language — nothing to execute. Use Copy / Save.`); return; }
-  // engine === "agent": hand off to Raihan Agent
-  noteLine(`▶ ${lang.name} can't run in-browser. Opening Raihan Agent to run & explain it…`);
+  // engine === "agent": hand off to EdX Agent
+  noteLine(`▶ ${lang.name} can't run in-browser. Opening EdX Agent to run & explain it…`);
   openAgent();
   setTimeout(() => sendToAgent(`Run the following ${lang.name} code and show the exact output. If you can't truly execute it, simulate the result by reasoning carefully through the code.\n\n\`\`\`\n${code}\n\`\`\``), 350);
 }
@@ -205,7 +205,7 @@ $("dlBtn").addEventListener("click", () => {
 function flash(btn, msg) { const old = btn.textContent; btn.textContent = msg; setTimeout(() => (btn.textContent = old), 1200); }
 let timer = null; function debounceRun() { clearTimeout(timer); timer = setTimeout(() => { clearConsole(); run(); }, 500); }
 
-/* ===================== Raihan Agent (LLM) ===================== */
+/* ===================== EdX Agent (LLM) ===================== */
 const agent = $("agent"), agentMsgs = $("agentMsgs"), agentInput = $("agentInput");
 let agentHistory = [];
 function openAgent() { agent.classList.add("is-open"); agent.setAttribute("aria-hidden", "false"); agentInput.focus(); }
@@ -328,7 +328,7 @@ $("setSave").addEventListener("click", () => {
   localStorage.setItem("mricode-ai-base", $("setBase").value.trim());
   localStorage.setItem("mricode-ai-key", $("setKey").value.trim());
   localStorage.setItem("mricode-ai-model", $("setModel").value.trim());
-  $("settingsModal").hidden = true; toast("Raihan Agent settings saved");
+  $("settingsModal").hidden = true; toast("EdX Agent settings saved");
 });
 
 function addMsg(role, text) {
@@ -345,12 +345,12 @@ async function sendToAgent(prompt) {
   const model = localStorage.getItem("mricode-ai-model") || "gpt-4o-mini";
   const code = activeEditor().value;
   const langName = LANGS.find((l) => l.id === currentLangId).name;
-  const sys = "You are Raihan Agent, an expert coding assistant inside the Raihan Code web IDE. Be concise. Use markdown code blocks. The user's current editor language is " + langName + ".";
+  const sys = "You are EdX Agent, an expert coding assistant inside the Code web IDE. Be concise. Use markdown code blocks. The user's current editor language is " + langName + ".";
   const userContent = (prompt || agentInput.value).trim();
   if (!userContent) return;
   addMsg("user", userContent);
   agentInput.value = "";
-  if (!key) { addMsg("bot", "⚙ Raihan Agent isn't configured yet. Click ⚙ and add an OpenAI-compatible API key to enable live responses. Until then I can only frame your request."); return; }
+  if (!key) { addMsg("bot", "⚙ EdX Agent isn't configured yet. Click ⚙ and add an OpenAI-compatible API key to enable live responses. Until then I can only frame your request."); return; }
   agentHistory.push({ role: "user", content: userContent + "\n\n[Current " + langName + " code in editor:]\n```\n" + code + "\n```" });
   const typing = addMsg("bot", "…");
   try {

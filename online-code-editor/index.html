@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raihan Code · Online Editor</title>
+  <title>Code · Online Editor</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -13,7 +13,7 @@
   <header class="topbar">
     <div class="brand">
       <span class="brand__mark">⚡</span>
-      <span class="brand__name">Raihan</span>
+      <span class="brand__name">EdX</span>
       <span class="brand__sub">Code</span>
     </div>
     <div class="tools">
@@ -28,7 +28,7 @@
       <div class="tools__group">
         <button class="btn btn--ghost" id="copyBtn" title="Copy code">Copy</button>
         <button class="btn btn--ghost" id="dlBtn" title="Download code">Save</button>
-        <button class="btn btn--agent" id="agentBtn" title="Raihan Agent (AI)">🤖 Agent</button>
+        <button class="btn btn--agent" id="agentBtn" title="EdX Agent (AI)">🤖 Agent</button>
       </div>
       <div class="tools__group">
         <button class="theme-switch" id="themeToggle" aria-label="Toggle light / dark theme" title="Toggle theme">
@@ -68,23 +68,23 @@
   </main>
 
   <footer class="brand-foot">
-    <span class="bf-brand">Raihan</span>
+    <span class="bf-brand">EdX</span>
     <span class="bf-tag">Three worlds. One name. Eternal.</span>
-    <span class="bf-pow">Powered by Raihan</span>
+    <span class="bf-pow">Powered by EdX</span>
   </footer>
 
-  <!-- Raihan Agent panel -->
+  <!-- EdX Agent panel -->
   <div class="agent-scrim" id="agentScrim"></div>
   <aside class="agent" id="agent" aria-hidden="true">
     <div class="agent__head">
-      <span>🤖 Raihan Agent</span>
+      <span>🤖 EdX Agent</span>
       <div>
         <button class="icon-btn" id="agentSettings" title="Settings">⚙</button>
         <button class="icon-btn" id="agentClose" title="Close">✕</button>
       </div>
     </div>
     <div class="agent__msgs" id="agentMsgs">
-      <div class="amsg amsg--bot">Hi, I'm <b>Raihan Agent</b> — your coding copilot. Ask me to explain, debug, or run code. I can see the code in your editor.</div>
+      <div class="amsg amsg--bot">Hi, I'm <b>EdX Agent</b> — your coding copilot. Ask me to explain, debug, or run code. I can see the code in your editor.</div>
     </div>
     <div class="agent__quick">
       <button data-q="Explain what this code does">Explain</button>
@@ -92,7 +92,7 @@
       <button data-q="Run this code and show the output">Run it</button>
     </div>
     <form class="agent__form" id="agentForm">
-      <textarea id="agentInput" placeholder="Ask Raihan Agent…" rows="2"></textarea>
+      <textarea id="agentInput" placeholder="Ask EdX Agent…" rows="2"></textarea>
       <button type="submit" id="agentSend">➤</button>
     </form>
   </aside>
@@ -100,7 +100,7 @@
   <!-- Agent settings modal -->
   <div class="modal" id="settingsModal" hidden>
     <div class="modal__card">
-      <h3>Raihan Agent settings</h3>
+      <h3>EdX Agent settings</h3>
       <p class="modal__hint">Works with <b>any</b> OpenAI-compatible provider — OpenAI, Anthropic, Google, Mistral, NVIDIA, DeepSeek, Alibaba, Z.ai, BAAI and more. Pick a provider, add your key, validate to load models, then choose by token cost. Your key stays only in this browser.</p>
 
       <div class="field">

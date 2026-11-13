@@ -1,4 +1,4 @@
-/* Optional realtime relay for the GitHub Pages build of Raihan Chat.
+/* Optional realtime relay for the GitHub Pages build of Chat.
  *
  * The chat works out-of-the-box in two ways:
  *   1. Served by the Node server (chatx/server)  -> same-origin WebSocket, realtime.

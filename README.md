@@ -1,15 +1,15 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:06b6d4&height=200&section=header&text=Raihan&fontSize=64&fontAlignY=36&fontColor=ffffff" alt="Raihan" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:06b6d4&height=200&section=header&text=EdX&fontSize=64&fontAlignY=36&fontColor=ffffff" alt="EdX" />
 </p>
 
-<h1 align="center">Raihan</h1>
+<h1 align="center">EdX</h1>
 
 <p align="center">
   <b>Three worlds. One name. Eternal.</b>
 </p>
 
 <p align="center">
-  A unified suite of modern web apps &amp; ML projects by <a href="https://github.com/theraihanrakibb">MD RAKIBUL ISLAM RAIHAN</a>.<br/>
+  A unified suite of modern web apps &amp; ML projects by <a href="https://github.com/theraihanrakibb">EdX</a>.<br/>
   Four polished products, one brand — built to look exceptional and run anywhere.
 </p>
 
@@ -24,23 +24,23 @@
 
 ## What's inside
 
-Raihan collects four independently-shippable web products under a single identity. Every web
+EdX collects four independently-shippable web products under a single identity. Every web
 app is **self-contained vanilla HTML/CSS/JS — no build step, no framework, no install**. Open the
 file and it works.
 
 | App | Folder | What it does | Stack |
 |-----|--------|--------------|-------|
-| **Raihan Weather** | [`weather-dashboard/`](weather-dashboard) | iPhone-style multi-location weather with live geolocation, weather-reactive scenes, notes & light/dark theme. | Vanilla JS · OpenWeatherMap · Geolocation |
-| **Raihan Code** | [`online-code-editor/`](online-code-editor) | In-browser IDE that **runs JS & Python** (Pyodide) and routes other languages to the **Raihan Agent** (LLM). | Vanilla JS · Pyodide · LLM API |
-| **Raihan Zodiac** | [`zodiac-calculator/`](zodiac-calculator) | Cosmic profile: Western + Chinese zodiac + MBTI with a generated summary & compatibility check. | Vanilla JS |
-| **Raihan Chat** | [`chatx/client/`](chatx/client) | Realtime social — chat, feed, friends & a wallet. Client-side by default, with **optional Node + WebSocket server** for true cross-device realtime. | Vanilla JS · WebSocket · localStorage |
+| **Weather** | [`weather-dashboard/`](weather-dashboard) | iPhone-style multi-location weather with live geolocation, weather-reactive scenes, notes & light/dark theme. | Vanilla JS · OpenWeatherMap · Geolocation |
+| **Code** | [`online-code-editor/`](online-code-editor) | In-browser IDE that **runs JS & Python** (Pyodide) and routes other languages to the **EdX Agent** (LLM). | Vanilla JS · Pyodide · LLM API |
+| **Zodiac** | [`zodiac-calculator/`](zodiac-calculator) | Cosmic profile: Western + Chinese zodiac + MBTI with a generated summary & compatibility check. | Vanilla JS |
+| **Chat** | [`chatx/client/`](chatx/client) | Realtime social — chat, feed, friends & a wallet. Client-side by default, with **optional Node + WebSocket server** for true cross-device realtime. | Vanilla JS · WebSocket · localStorage |
 
 ---
 
 ## Highlights
 
-- **One brand, four products.** Consistent naming (`Raihan *`), shared light/dark theming, and a
-  common identity across every app — each footer reads *"Powered by Raihan"*.
+- **One brand, four products.** Consistent naming (`Weather`, `Code`, `Zodiac`, `Chat`), shared light/dark theming, and a
+  common identity across every app — each footer reads *"Powered by EdX"*.
 - **Runs anywhere.** No bundlers, no `npm install`, no servers for the web apps. Open
   `index.html` (or serve with `python -m http.server`) and you're in.
 - **Real features, not demos.** Live weather & geolocation, an in-browser code runner with an
@@ -62,22 +62,22 @@ python -m http.server 8000
 # open http://localhost:8000
 ```
 
-> Tip: open **Raihan Chat** in two browser tabs with different usernames to see realtime
-> sync, and try **Raihan Code**'s ▶ Run (JS/Python) or the 🤖 Raihan Agent.
+> Tip: open **Chat** in two browser tabs with different usernames to see realtime
+> sync, and try **Code**'s ▶ Run (JS/Python) or the 🤖 EdX Agent.
 
 ---
 
 ## Per-product setup
 
-- **Raihan Weather** — ships with a free OpenWeatherMap key; works offline via a built-in mock dataset.
-- **Raihan Code** — JS runs in a sandbox; Python via Pyodide CDN. The Raihan Agent works with
+- **Weather** — ships with a free OpenWeatherMap key; works offline via a built-in mock dataset.
+- **Code** — JS runs in a sandbox; Python via Pyodide CDN. The EdX Agent works with
   **any OpenAI-compatible provider** (OpenAI, Anthropic, Google, Mistral, NVIDIA, DeepSeek, Alibaba,
   Z.ai, BAAI and more). Pick a provider, add your key, validate to load models, then choose by token cost.
-- **Raihan Chat** — client-side first: it just works from `chatx/client/`. For real cross-device
+- **Chat** — client-side first: it just works from `chatx/client/`. For real cross-device
   realtime, run the included zero-dependency server: `cd chatx/server && npm start` (or `node server.js`),
   then open the page — the client auto-connects.
 See each folder's `README.md` for details.
 
 ---
 
-<p align="center"><sub>Raihan — Three worlds. One name. Eternal. — Powered by Raihan</sub></p>
+<p align="center"><sub>EdX — Three worlds. One name. Eternal. — Powered by EdX</sub></p>

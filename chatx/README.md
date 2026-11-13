@@ -1,4 +1,4 @@
-# Raihan Chat — realtime server
+# Chat — realtime server
 
 The chat works **out of the box**: open `chatx/client/index.html` (or the GitHub Pages link)
 and it runs as a local demo — two tabs in the same browser sync live via `BroadcastChannel`.
@@ -23,7 +23,7 @@ options below read `render.yaml` / `railway.json` from the repo root.
 **Render (recommended — free, WebSocket-friendly):**
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/theraihanrakibb/edx-web-apps)
 
-> Replace the repo owner in the button URL if needed: `https://render.com/deploy?repo=https://github.com/<you>/Raihan`
+> Replace the repo owner in the button URL if needed: `https://render.com/deploy?repo=https://github.com/<you>/EdX`
 
 **Railway:**
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?repo=https://github.com/theraihanrakibb/edx-web-apps)

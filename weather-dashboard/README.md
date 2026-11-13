@@ -1,8 +1,8 @@
-# Raihan Weather · Live Weather Dashboard
+# Weather · Live Weather Dashboard
 
 A modern, single-page weather app that pulls **live conditions for any city** from the
 [OpenWeatherMap](https://openweathermap.org/) API and frames them in a glassy, weather-reactive
-interface. Built by **Raihan** as part of the Raihan portfolio. The whole page subtly shifts its
+interface. Built by **EdX** as part of the EdX portfolio. The whole page subtly shifts its
 background to match the sky — sunny gold for *clear*, deep blue for *rain*, violet for *thunder*,
 and so on.
 
@@ -61,5 +61,5 @@ rather than crashing.
 
 ---
 
-Part of the **Raihan** suite: **Raihan Weather** (this app), **Raihan Code**, **Raihan Zodiac**,
-**Raihan Chat** (realtime social), and **Raihan Mind** (ML).
+Part of the **EdX** suite: **Weather** (this app), **Code**, **Zodiac**,
+**Chat** (realtime social), and **EdX Mind** (ML).

@@ -1,7 +1,7 @@
 {
   "name": "mrihat-server",
   "version": "1.0.0",
-  "description": "Raihan Chat realtime server (Node + WebSocket, zero dependencies)",
+  "description": "Chat realtime server (Node + WebSocket, zero dependencies)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

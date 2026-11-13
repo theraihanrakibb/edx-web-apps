@@ -1,10 +1,10 @@
-# Raihan Zodiac · Cosmic Profile & Compatibility
+# Zodiac · Cosmic Profile & Compatibility
 
 A single-page **cosmic profile** app that turns a birth date into a rich, readable
 personality reading — and lets you check compatibility with a partner. Built by
-**Raihan** as part of the Raihan portfolio.
+**EdX** as part of the EdX portfolio.
 
-Instead of a single "match %", Raihan Zodiac reveals **three interlocking profiles**:
+Instead of a single "match %", Zodiac reveals **three interlocking profiles**:
 
 - **Western zodiac** (Aries … Pisces) — element, ruling planet, core traits, and a
   short archetype description.
@@ -55,5 +55,5 @@ score updates live as you change any input, gender toggle, or MBTI chip.
 
 ---
 
-Part of the **Raihan** suite: **Raihan Weather**, **Raihan Code**,
-**Raihan Zodiac** (this app), **Raihan Chat** (realtime social), and **Raihan Mind** (ML).
+Part of the **EdX** suite: **Weather**, **Code**,
+**Zodiac** (this app), **Chat** (realtime social), and **EdX Mind** (ML).
